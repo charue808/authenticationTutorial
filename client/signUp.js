@@ -1,5 +1,5 @@
 Template.signUp.events ({
-	'submit #signUpForm': function(e,t){
+	'submit #signUpForm': function(e,tmpl){
 		e.preventDefault();
 
 		var signUpForm = $(e.currentTarget),

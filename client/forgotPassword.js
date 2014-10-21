@@ -1,5 +1,5 @@
 Template.forgotPassword.events({
-	'submit #forgotPasswordForm': function(e,t){
+	'submit #forgotPasswordForm': function(e,tmpl){
 		e.preventDefault();
 
 		var forgotPasswordForm = $(e.currentTarget),
@@ -22,7 +22,7 @@ Template.forgotPassword.events({
 		return false;
 	},
 
-	'click #returnToSignIn': function(e,t){
+	'click #returnToSignIn': function(e,tmpl){
 		Session.set('showForgotPassword', null);
 		return false;
 	},

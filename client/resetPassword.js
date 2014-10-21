@@ -1,5 +1,5 @@
-Template.resetPassword.events({
-	'submit #resetPasswordForm': function(e,t){
+Template.resetPasswordTemplate.events({
+	'submit #resetPasswordForm': function(e,tmpl){
 		e.preventDefault();
 
 		var resetPasswordForm = $(e.currentTarget),

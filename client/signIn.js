@@ -1,5 +1,5 @@
 Template.signIn.events ({
-	'submit #signInForm': function(e,t){
+	'submit #signInForm': function(e,tmpl){
 		e.preventDefault();
 
 		var signInForm = $(e.currentTarget),
@@ -18,7 +18,7 @@ Template.signIn.events ({
 		return false;
 	},
 
-	'click #showForgotPassword':function(e,t){
+	'click #showForgotPassword':function(e,tmpl){
 		Session.set('showForgotPassword',true);
 		return false;
 	},
